@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -13,10 +13,13 @@
             function onBodyLoad()
             {
                 document.addEventListener("deviceready",onDeviceReady, false);
+                //alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
+                //navigator.notification.alert("PhoneGap is ready");
             }
             
             function onDeviceReady()
             {
+                alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
                 navigator.notification.alert("PhoneGap is ready");
             }
         </script>
@@ -24,6 +27,11 @@
     
     <body onload="onBodyLoad()">
         <h1>Hello World 2</h1>
+        
         <p>This is a sample PhoneGap application</p>
+        <form method="post" action="index.html">
+            <input type='submit' onclick='onBodyLoad()' value='Haz clic aqui'>
+        
+        </form>
     </body>
 </html>
