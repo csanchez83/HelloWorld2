@@ -1,15 +1,21 @@
 <!doctype html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html" charset="utf-8" />
-        <meta name="viewport" id="viewport" content="width=device-width, height=device-height,
-                                                     initial-scale=1.0, maximum-scale=1.0,
-                                                     user-scalable=no" />
         
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         
         <script type="text/javascript" charset="utf-8">
         
+            document.addEventListener("deviceready", IniciarAplicacion, false);
+            
+            function IniciarAplicacion()
+            {
+                    var elemento = document.getElementById('propiedades');
+                    var informacion="<BR>Tu SO es: " + device.platform + "<BR>Version: " +              
+                                device.version;
+                        
+                    elemento.innerHTML = informacion;
+    
             /*function onBodyLoad()
             {
                 //alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
@@ -35,34 +41,8 @@
     
     <body>
         
-        
-            <div id="home" class="current">
-        
-                <h1>Pagina Principal</h1>
+            <div id="propiedades">Obteniendo información del dispositivo</div>
                 
-                <script type="text/javascript">
-                
-                    document.addEventListener("deviceready",onDeviceReady, false);
-                    
-                    function onDeviceReady()
-                    {
-
-                        var modelo = device.model;
-                    
-                        document.write("Cargo PhoneGap: ");
-                    }
-                    
-                </script>
-        
-            </div>
-        
-            <div id="datos">
-        
-                <h1>Pagina de datos</h1>    
-        
-            </div>
-
-        
 
     </body>
 </html>
