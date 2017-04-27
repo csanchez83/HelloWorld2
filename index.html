@@ -12,7 +12,8 @@
         
             function onBodyLoad()
             {
-                navigator.notification.alert("PhoneGap is ready");
+                alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
+                //navigator.notification.alert("PhoneGap is ready");
                 document.addEventListener("deviceready",onDeviceReady, false);
                 //alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
                 //navigator.notification.alert("PhoneGap is ready");
@@ -23,7 +24,7 @@
 
                 alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
 
-                alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
+                
 
                 navigator.notification.alert("PhoneGap is ready");
             }
