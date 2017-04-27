@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html" charset="utf-8" />
@@ -23,7 +23,9 @@
             {
 
                 alert("PhoneGap is ready");
-
+                
+                
+                $("#home").html("Datos del dispositivo: " + device.model);
                 
 
                 //navigator.notification.alert("PhoneGap is ready");
@@ -32,16 +34,21 @@
     </head>
     
     <body onload="onBodyLoad()">
-        <h1>Hello World 2</h1>
         
-        <p>This is a sample PhoneGap application</p>
 
-        <form method="post" action="index.html">
-            //<input type='submit' onclick='onBodyLoad()' value='Haz clic aqui'>
+        <div id="home" class="current">
         
-        </form>
+        
+        
+        </div>
+        
+        <div id="datos">
+        
+            
+        
+        </div>
 
-        <p>Intento 6</p>
+        
 
     </body>
 </html>
