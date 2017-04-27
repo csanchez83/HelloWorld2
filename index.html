@@ -12,7 +12,7 @@
         
             function onBodyLoad()
             {
-                alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
+                //alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
                 //navigator.notification.alert("PhoneGap is ready");
                 document.addEventListener("deviceready",onDeviceReady, false);
                 //alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
@@ -22,11 +22,11 @@
             function onDeviceReady()
             {
 
-                alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
+                alert("PhoneGap is ready");
 
                 
 
-                navigator.notification.alert("PhoneGap is ready");
+                //navigator.notification.alert("PhoneGap is ready");
             }
         </script>
     </head>
@@ -37,7 +37,7 @@
         <p>This is a sample PhoneGap application</p>
 
         <form method="post" action="index.html">
-            <input type='submit' onclick='onBodyLoad()' value='Haz clic aqui'>
+            //<input type='submit' onclick='onBodyLoad()' value='Haz clic aqui'>
         
         </form>
 
