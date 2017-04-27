@@ -4,8 +4,25 @@
         
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         
+        
+        <script type="text/javascript" charset="utf-8">
+                
+                    /*document.addEventListener("deviceready",onDeviceReady, false);
+                    
+                    function onDeviceReady()
+                    {
+
+                        var modelo = device.model;
+                    
+                        document.getElementById("home").innerHTML = "Modelo del Dispositivo: " + modelo;
+                        
+                    }*/
+                    
+                </script>
+        
         <script type="text/javascript" charset="utf-8">
         
+<<<<<<< HEAD
             document.addEventListener("deviceready", IniciarAplicacion, false);
             
             function IniciarAplicacion()
@@ -17,6 +34,9 @@
                     elemento.innerHTML = informacion;
     
             /*function onBodyLoad()
+=======
+            function onBodyLoad()
+>>>>>>> origin/master
             {
                 //alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
                 //navigator.notification.alert("PhoneGap is ready");
@@ -31,18 +51,36 @@
                 alert("PhoneGap is ready");
                 
                 
-                $('#home h2').html('Datos del dispositivo: ');
-                
+                //$('#home h2').html('Datos del dispositivo: ');
+                 //var modelo = device.model;
+                var string = device.cordova;
+                    
+                 document.getElementById("datos").innerHTML = "Fabricante del Dispositivo: " + string;
 
                 //navigator.notification.alert("PhoneGap is ready");
-            }*/
+            }
         </script>
     </head>
     
+<<<<<<< HEAD
     <body>
         
             <div id="propiedades">Obteniendo información del dispositivo</div>
                 
+=======
+    <body onLoad="onBodyLoad()">
+        
+        
+            
+        
+            <p id="datos">
+        
+                  
+        
+            </p>
+
+        
+>>>>>>> origin/master
 
     </body>
 </html>
