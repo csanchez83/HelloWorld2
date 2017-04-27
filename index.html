@@ -10,7 +10,7 @@
         
         <script type="text/javascript" charset="utf-8">
         
-            function onBodyLoad()
+            /*function onBodyLoad()
             {
                 //alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
                 //navigator.notification.alert("PhoneGap is ready");
@@ -29,11 +29,11 @@
                 
 
                 //navigator.notification.alert("PhoneGap is ready");
-            }
+            }*/
         </script>
     </head>
     
-    <body onload="onBodyLoad()">
+    <body>
         
         
             <div id="home" class="current">
@@ -42,9 +42,15 @@
                 
                 <script type="text/javascript">
                 
-                    var modelo = device.model;
+                    document.addEventListener("deviceready",onDeviceReady, false);
                     
-                    document.write("Datos del dispositivo: " + modelo);
+                    function onDeviceReady()
+                    {
+
+                        var modelo = device.model;
+                    
+                        document.write("Datos del dispositivo: " + modelo);
+                    }
                     
                 </script>
         
