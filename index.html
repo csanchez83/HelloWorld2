@@ -24,11 +24,13 @@
         
             function onBodyLoad()
             {
+                alert("Ingreso a funcion onBodyLoad");
                 document.addEventListener("deviceready", IniciarAplicacion, false);
             }
             
             function IniciarAplicacion()
             {
+                alert("Ingreso a funcion IniciarAplicacion");
                     var elemento = document.getElementById('propiedades');
                     var informacion="<BR>Tu SO es: <BR>Version: ";
                         
