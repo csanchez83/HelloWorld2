@@ -1,24 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" id="viewport" content="width=device-width, height=device-height,
+                                                     initial-scale=1.0, maximum-scale=1.0,
+                                                     user-scalable=no;" />
         
         <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
         
         
-        <script type="text/javascript" charset="utf-8">
-                
-                    /*document.addEventListener("deviceready",onDeviceReady, false);
-                    
-                    function onDeviceReady()
-                    {
-
-                        var modelo = device.model;
-                    
-                        document.getElementById("home").innerHTML = "Modelo del Dispositivo: " + modelo;
-                        
-                    }*/
-                    
-                </script>
+       
         
         <script type="text/javascript" charset="utf-8">
         
@@ -37,32 +28,7 @@
                     elemento.innerHTML = informacion;
             }
     
-            /*function onBodyLoad()
-=======
-            function onBodyLoad()
->>>>>>> origin/master
-            {
-                //alert("Hola" ? ("Hola" + ": " + "Mensaje") : "Mensaje");
-                //navigator.notification.alert("PhoneGap is ready");
-                document.addEventListener("deviceready",onDeviceReady, false);
-                //alert("Titulo" ? ("Titulo" + ": " + "Mensaje") : "Mensaje");
-                //navigator.notification.alert("PhoneGap is ready");
-            }
-            
-            function onDeviceReady()
-            {
-
-                alert("PhoneGap is ready");
-                
-                
-                //$('#home h2').html('Datos del dispositivo: ');
-                 //var modelo = device.model;
-                var string = device.cordova;
-                    
-                 document.getElementById("datos").innerHTML = "Fabricante del Dispositivo: " + string;
-
-                //navigator.notification.alert("PhoneGap is ready");
-            }
+           
         </script>
     </head>
     
@@ -70,9 +36,6 @@
     <body onload="onBodyLoad()">
         
             <div id="propiedades">Obteniendo informacion del dispositivo</div>
-                
-
-  
 
 
     </body>
