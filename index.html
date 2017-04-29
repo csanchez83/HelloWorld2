@@ -25,6 +25,8 @@
                     var elemento = document.getElementById('propiedades');
                     var informacion="<BR>Tu SO es: " + device.platform + "<BR>Version: " + device.version ;
                 
+                elemento.innerHTML = informacion;
+                
                 navigator.geolocation.getCurrentPosition(function(position) {
                     alert('Latitude: '          + position.coords.latitude          + '\n' +
                             'Longitude: '         + position.coords.longitude         + '\n' +
@@ -34,12 +36,19 @@
                             'Heading: '           + position.coords.heading           + '\n' +
                             'Speed: '             + position.coords.speed             + '\n' +
                             'Timestamp: '         + position.timestamp                + '\n');
+                    
+                    var gps = document.getElementById('gps');
+                    var infgps = "<BR>Latitude: " + position.coords.latitude;
+                    infgps = infgps + "<BR>Longitude: " + position.coords.longitude;
+                    
+                    gps.innerHTML = infgps;
+                    
                 }, function onError(error) {
                     alert('code: '    + error.code    + '\n' +
                             'message: ' + error.message + '\n');
                     });
                         
-                    elemento.innerHTML = informacion;
+                    
             }
     
            
@@ -51,6 +60,8 @@
         
             <div id="propiedades">Obteniendo informacion del dispositivo</div>
 
-
+            <p><hr></p>
+        
+            <div id="gps"></div>
     </body>
 </html>
