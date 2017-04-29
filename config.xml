@@ -12,8 +12,7 @@
 
   <plugin name="cordova-plugin-device" spec="^1.1.0" />  
 
-    
-    <gap:plugin name="org.apache.cordova.battery-status"/>
+  <gap:plugin name="org.apache.cordova.battery-status"/>
   <gap:plugin name="org.apache.cordova.camera"/>
   <gap:plugin name="org.apache.cordova.media-capture"/>
   <gap:plugin name="org.apache.cordova.console"/>
