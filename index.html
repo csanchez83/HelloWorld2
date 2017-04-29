@@ -22,8 +22,10 @@
         
         <script type="text/javascript" charset="utf-8">
         
-
-            document.addEventListener("deviceready", IniciarAplicacion, false);
+            function onBodyLoad()
+            {
+                document.addEventListener("deviceready", IniciarAplicacion, false);
+            }
             
             function IniciarAplicacion()
             {
@@ -63,7 +65,7 @@
     </head>
     
 
-    <body>
+    <body onload="onBodyLoad()">
         
             <div id="propiedades">Obteniendo informacion del dispositivo</div>
                 
